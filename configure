@@ -9909,7 +9909,7 @@ $as_echo "no" >&6; }; CXXFLAGS="$save_CXXFLAGS"
 fi
 rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
 
-  # disable as-needed in linking libraries
+  # disable as-needed in linking libraries (both static and shared)
 
   save_CXXFLAGS="$CXXFLAGS"
   CXXFLAGS="$CXXFLAGS -Wl,--no-as-needed"
@@ -9956,6 +9956,7 @@ $as_echo "no" >&6; }; CXXFLAGS="$save_CXXFLAGS"
 fi
 rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
 
+  LDSHARED="$LDSHARED -Wl,--no-as-needed "
 
   # test program (CUDA)
 

@@ -915,8 +915,9 @@ fi
 if test $libtorch = true ; then 
   # enable c++14 support
   PLUMED_CHECK_CXXFLAG([-std=c++14])
-  # disable as-needed in linking libraries
+  # disable as-needed in linking libraries (both static and shared)
   PLUMED_CHECK_CXXFLAG([-Wl,--no-as-needed])
+  LDSHARED="$LDSHARED -Wl,--no-as-needed "
 
   # test program (CUDA)
   PLUMED_CHECK_CXX_PACKAGE([libtorch_cuda],[
