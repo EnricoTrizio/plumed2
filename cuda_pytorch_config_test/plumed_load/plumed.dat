@@ -1,0 +1,12 @@
+# vim:ft=plumed
+LOAD FILE=TorchModel.cpp
+
+UNITS NATURAL
+
+p: POSITION ATOM=1
+
+cv1: PYTORCH_MODEL2 MODEL=cuda_cv.pt ARG=p.x,p.y CUDA 
+#cv2: PYTORCH_MODEL2 MODEL=cuda_cv_scripted.pt ARG=p.x,p.y
+#DUMPDERIVATIVES ARG=cv1.*,cv2.* STRIDE=1 FILE=deriv
+PRINT STRIDE=200 ARG=* FILE=COLVAR
+DEBUG DETAILED_TIMERS
