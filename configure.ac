@@ -915,15 +915,39 @@ fi
 if test $libtorch = true ; then 
   # enable c++14 support
   PLUMED_CHECK_CXXFLAG([-std=c++14])
-  # test program
-  PLUMED_CHECK_CXX_PACKAGE([libtorch],[
-#include <torch/torch.h>
-#include <torch/script.h>
-int main() {
-  torch::Tensor tensor = torch::rand({2, 3});
-  return 0;
-}
+  # disable as-needed in linking libraries
+  PLUMED_CHECK_CXXFLAG([-Wl,--no-as-needed])
+
+  # test program (CUDA)
+  PLUMED_CHECK_CXX_PACKAGE([libtorch_cuda],[
+    #include <torch/torch.h>
+    #include <torch/script.h>
+    #include <torch/cuda.h>
+    int main() {
+      std::cerr << "CUDA is available: " << torch::cuda::is_available() << std::endl;
+      torch::Tensor tensor = torch::rand({2, 3});
+      torch::Device device = torch::kCPU;
+
+      device = torch::kCUDA;
+      tensor.to(device);
+
+      return 0;
+    }
+  ], [__PLUMED_HAS_LIBTORCH], [ torch_cpu c10 c10_cuda torch_cuda ], [true])
+  
+  if test "$__PLUMED_HAS_LIBTORCH" = no; then
+  AC_MSG_NOTICE([CUDA-enabled libtorch not found, trying with CPU only version.])
+    # test program (CPU)
+    PLUMED_CHECK_CXX_PACKAGE([libtorch_cpu],[
+    #include <torch/torch.h>
+    #include <torch/script.h>
+    int main() {
+      torch::Tensor tensor = torch::rand({2, 3});
+      
+      return 0;
+    }
   ], [__PLUMED_HAS_LIBTORCH], [ torch_cpu c10 ], [true])
+  fi
 fi
 
 # in non-debug mode, add -DNDEBUG
