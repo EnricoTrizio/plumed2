@@ -1,0 +1,316 @@
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.9.0-dev (git: b59033373) compiled on Nov  3 2022 at 17:27:04
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /home/etrizio@iit.local/Bin/dev/plumed2/build/lib/plumed
+PLUMED: For installed feature, see /home/etrizio@iit.local/Bin/dev/plumed2/build/lib/plumed/src/config/config.txt
+PLUMED: Molecular dynamics engine: mdrunner_linearexpansion
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 1
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 1
+PLUMED: File suffix: 
+PLUMED: FILE: plumed.dat
+PLUMED: Action LOAD
+PLUMED:   with label @0
+PLUMED: Executing: env PLUMED_ROOT="/home/etrizio@iit.local/Bin/dev/plumed2/build/lib/plumed" env PLUMED_VERSION="2.9.0-dev" env PLUMED_HTMLDIR="/home/etrizio@iit.local/Bin/dev/plumed2/build/share/doc/plumed" env PLUMED_INCLUDEDIR="/home/etrizio@iit.local/Bin/dev/plumed2/build/include" env PLUMED_PROGRAM_NAME="plumed" env PLUMED_IS_INSTALLED="yes" "/home/etrizio@iit.local/Bin/dev/plumed2/build/lib/plumed"/scripts/mklib.sh ./test.cpp (only on master node)
+PLUMED: Loading shared library ././test.so
+PLUMED: Here is the new list of available actions
+PLUMED:   ABMD
+PLUMED:   ADAPTIVE_PATH
+PLUMED:   ALPHABETA
+PLUMED:   ALPHARMSD
+PLUMED:   ANGLE
+PLUMED:   ANGLES
+PLUMED:   ANTIBETARMSD
+PLUMED:   AROUND
+PLUMED:   AVERAGE
+PLUMED:   BF_CHEBYSHEV
+PLUMED:   BF_COMBINED
+PLUMED:   BF_COSINE
+PLUMED:   BF_CUBIC_B_SPLINES
+PLUMED:   BF_CUSTOM
+PLUMED:   BF_FOURIER
+PLUMED:   BF_GAUSSIANS
+PLUMED:   BF_LEGENDRE
+PLUMED:   BF_POWERS
+PLUMED:   BF_SINE
+PLUMED:   BF_WAVELETS
+PLUMED:   BIASVALUE
+PLUMED:   BRIDGE
+PLUMED:   CALIBER
+PLUMED:   CAVITY
+PLUMED:   CELL
+PLUMED:   CENTER
+PLUMED:   CENTER_OF_MULTICOLVAR
+PLUMED:   COLLECT_FRAMES
+PLUMED:   COM
+PLUMED:   COMBINE
+PLUMED:   COMMITTOR
+PLUMED:   CONSTANT
+PLUMED:   CONTACTMAP
+PLUMED:   CONVERT_TO_FES
+PLUMED:   COORDINATION
+PLUMED:   COORDINATIONNUMBER
+PLUMED:   CS2BACKBONE
+PLUMED:   CUSTOM
+PLUMED:   DEBUG
+PLUMED:   DENSITY
+PLUMED:   DHENERGY
+PLUMED:   DIHCOR
+PLUMED:   DIMER
+PLUMED:   DIPOLE
+PLUMED:   DISTANCE
+PLUMED:   DISTANCES
+PLUMED:   DISTANCE_FROM_CONTOUR
+PLUMED:   DRMSD
+PLUMED:   DUMPATOMS
+PLUMED:   DUMPCUBE
+PLUMED:   DUMPDERIVATIVES
+PLUMED:   DUMPFORCES
+PLUMED:   DUMPGRID
+PLUMED:   DUMPMASSCHARGE
+PLUMED:   DUMPMULTICOLVAR
+PLUMED:   DUMPPROJECTIONS
+PLUMED:   EEFSOLV
+PLUMED:   EFFECTIVE_ENERGY_DRIFT
+PLUMED:   EMMI
+PLUMED:   ENDPLUMED
+PLUMED:   ENERGY
+PLUMED:   ENSEMBLE
+PLUMED:   ERMSD
+PLUMED:   EUCLIDEAN_DISSIMILARITIES
+PLUMED:   EXTENDED_LAGRANGIAN
+PLUMED:   EXTERNAL
+PLUMED:   EXTRACV
+PLUMED:   FAKE
+PLUMED:   FIND_CONTOUR
+PLUMED:   FIND_CONTOUR_SURFACE
+PLUMED:   FIND_SPHERICAL_CONTOUR
+PLUMED:   FIT_TO_TEMPLATE
+PLUMED:   FIXEDATOM
+PLUMED:   FLUSH
+PLUMED:   FOURIER_TRANSFORM
+PLUMED:   FRET
+PLUMED:   FUNCPATHGENERAL
+PLUMED:   FUNCPATHMSD
+PLUMED:   FUNCSUMHILLS
+PLUMED:   GHBFIX
+PLUMED:   GHOST
+PLUMED:   GPROPERTYMAP
+PLUMED:   GRID_TO_XYZ
+PLUMED:   GROUP
+PLUMED:   GYRATION
+PLUMED:   HISTOGRAM
+PLUMED:   INCLUDE
+PLUMED:   INCYLINDER
+PLUMED:   INENVELOPE
+PLUMED:   INPLANEDISTANCES
+PLUMED:   INSPHERE
+PLUMED:   INTEGRATE_GRID
+PLUMED:   INTERPOLATE_GRID
+PLUMED:   JCOUPLING
+PLUMED:   LANDMARK_SELECT_FPS
+PLUMED:   LANDMARK_SELECT_RANDOM
+PLUMED:   LANDMARK_SELECT_STAGED
+PLUMED:   LANDMARK_SELECT_STRIDE
+PLUMED:   LOAD
+PLUMED:   LOCALENSEMBLE
+PLUMED:   LOCAL_AVERAGE
+PLUMED:   LOWER_WALLS
+PLUMED:   MATHEVAL
+PLUMED:   MAXENT
+PLUMED:   MCOLV_COMBINE
+PLUMED:   MCOLV_PRODUCT
+PLUMED:   METAD
+PLUMED:   METAINFERENCE
+PLUMED:   MFILTER_BETWEEN
+PLUMED:   MFILTER_LESS
+PLUMED:   MFILTER_MORE
+PLUMED:   MOLINFO
+PLUMED:   MOVINGRESTRAINT
+PLUMED:   MTRANSFORM_BETWEEN
+PLUMED:   MTRANSFORM_LESS
+PLUMED:   MTRANSFORM_MORE
+PLUMED:   MULTICOLVARDENS
+PLUMED:   MULTI_RMSD
+PLUMED:   NLINKS
+PLUMED:   NOE
+PLUMED:   OPT_ADAM
+PLUMED:   OPT_AVERAGED_SGD
+PLUMED:   OPT_DUMMY
+PLUMED:   OPT_ROBBINS_MONRO_SGD
+PLUMED:   OUTPUT_ANALYSIS_DATA_TO_COLVAR
+PLUMED:   OUTPUT_ANALYSIS_DATA_TO_PDB
+PLUMED:   PARABETARMSD
+PLUMED:   PATH
+PLUMED:   PATHMSD
+PLUMED:   PBMETAD
+PLUMED:   PCARMSD
+PLUMED:   PCAVARS
+PLUMED:   PCS
+PLUMED:   PIECEWISE
+PLUMED:   PLUMED
+PLUMED:   POSITION
+PLUMED:   PRE
+PLUMED:   PRINT
+PLUMED:   PRINT_DISSIMILARITY_MATRIX
+PLUMED:   PROJECTION_ON_AXIS
+PLUMED:   PROPERTYMAP
+PLUMED:   PUCKERING
+PLUMED:   PYTORCH_MODEL_CUDA
+PLUMED:   RANDOM_EXCHANGES
+PLUMED:   RDC
+PLUMED:   READ
+PLUMED:   READ_DISSIMILARITY_MATRIX
+PLUMED:   RESCALE
+PLUMED:   RESELECT_LANDMARKS
+PLUMED:   RESET_CELL
+PLUMED:   RESTART
+PLUMED:   RESTRAINT
+PLUMED:   REWEIGHT_BIAS
+PLUMED:   REWEIGHT_METAD
+PLUMED:   REWEIGHT_TEMP_PRESS
+PLUMED:   REWEIGHT_WHAM
+PLUMED:   RMSD
+PLUMED:   SAXS
+PLUMED:   SELECT
+PLUMED:   SELECTOR
+PLUMED:   SORT
+PLUMED:   STATS
+PLUMED:   TARGET
+PLUMED:   TD_CHI
+PLUMED:   TD_CHISQUARED
+PLUMED:   TD_CUSTOM
+PLUMED:   TD_EXPONENTIAL
+PLUMED:   TD_EXPONENTIALLY_MODIFIED_GAUSSIAN
+PLUMED:   TD_GAUSSIAN
+PLUMED:   TD_GENERALIZED_EXTREME_VALUE
+PLUMED:   TD_GENERALIZED_NORMAL
+PLUMED:   TD_GRID
+PLUMED:   TD_LINEAR_COMBINATION
+PLUMED:   TD_MULTICANONICAL
+PLUMED:   TD_MULTITHERMAL_MULTIBARIC
+PLUMED:   TD_PRODUCT_COMBINATION
+PLUMED:   TD_PRODUCT_DISTRIBUTION
+PLUMED:   TD_UNIFORM
+PLUMED:   TD_VONMISES
+PLUMED:   TD_WELLTEMPERED
+PLUMED:   TEMPLATE
+PLUMED:   TETRAHEDRALPORE
+PLUMED:   TIME
+PLUMED:   TORSION
+PLUMED:   TORSIONS
+PLUMED:   UNITS
+PLUMED:   UPDATE_IF
+PLUMED:   UPPER_WALLS
+PLUMED:   VES_DELTA_F
+PLUMED:   VES_LINEAR_EXPANSION
+PLUMED:   VES_OUTPUT_BASISFUNCTIONS
+PLUMED:   VES_OUTPUT_FES
+PLUMED:   VES_OUTPUT_TARGET_DISTRIBUTION
+PLUMED:   VOLUME
+PLUMED:   WHAM_HISTOGRAM
+PLUMED:   WHAM_WEIGHTS
+PLUMED:   WHOLEMOLECULES
+PLUMED:   WRAPAROUND
+PLUMED:   XANGLES
+PLUMED:   XDISTANCES
+PLUMED:   XYDISTANCES
+PLUMED:   XYTORSIONS
+PLUMED:   XZDISTANCES
+PLUMED:   XZTORSIONS
+PLUMED:   YANGLES
+PLUMED:   YDISTANCES
+PLUMED:   YXTORSIONS
+PLUMED:   YZDISTANCES
+PLUMED:   YZTORSIONS
+PLUMED:   ZANGLES
+PLUMED:   ZDISTANCES
+PLUMED:   ZXTORSIONS
+PLUMED:   ZYTORSIONS
+PLUMED: Action UNITS
+PLUMED:   with label @1
+PLUMED:   length: nm
+PLUMED:   energy: kj/mol
+PLUMED:   time: ps
+PLUMED:   charge: e
+PLUMED:   mass: amu
+PLUMED:   using natural units
+PLUMED:   inside PLUMED, Boltzmann constant is 1
+PLUMED: Action POSITION
+PLUMED:   with label p
+PLUMED:   for atom 1
+PLUMED:   using periodic boundary conditions
+PLUMED:   added component to this action:  p.x 
+PLUMED:   added component to this action:  p.y 
+PLUMED:   added component to this action:  p.z 
+PLUMED:   WARNING: components will not have the proper periodicity - see manual
+PLUMED: Action PYTORCH_MODEL_CUDA
+PLUMED:   with label cuda
+PLUMED:   with arguments p.x p.y
+PLUMED: CUDA is requested.
+PLUMED: Number of cuda devices: 1 
+PLUMED: CUDA enabled
+PLUMED: Checking output dimension:
+PLUMED:   added component to this action:  cuda.node-0 
+PLUMED: Number of input: 2 
+PLUMED: Number of outputs: 1 
+PLUMED:   Bibliography: [3][4]
+PLUMED: Action PYTORCH_MODEL_CUDA
+PLUMED:   with label cpu
+PLUMED:   with arguments p.x p.y
+PLUMED: Checking output dimension:
+PLUMED:   added component to this action:  cpu.node-0 
+PLUMED: Number of input: 2 
+PLUMED: Number of outputs: 1 
+PLUMED:   Bibliography: [3][4]
+PLUMED: Action DUMPDERIVATIVES
+PLUMED:   with label @5
+PLUMED:   with stride 1000
+PLUMED:   with arguments cuda.node-0 cpu.node-0
+PLUMED:   on file deriv
+PLUMED:   with format  %15.10f
+PLUMED: Action PRINT
+PLUMED:   with label @6
+PLUMED:   with stride 1000
+PLUMED:   with arguments p.x p.y p.z cuda.node-0 cpu.node-0
+PLUMED:   on file COLVAR
+PLUMED:   with format  %f
+PLUMED: Action DEBUG
+PLUMED:   with label @7
+PLUMED:   with stride 1
+PLUMED:   Detailed timing on
+PLUMED:   on plumed log file
+PLUMED: END FILE: plumed.dat
+PLUMED: Timestep: 0.005000
+PLUMED: KbT: 1.000000
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED:   [3] Bonati, Rizzi and Parrinello, J. Phys. Chem. Lett. 11, 2998-3004 (2020)
+PLUMED:   [4] Trizio and Parrinello, J. Phys. Chem. Lett. 12, 8621-8626 (2021)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup
+PLUMED:                                               Cycles        Total      Average      Minimum      Maximum
+PLUMED:                                                    1    11.862182    11.862182    11.862182    11.862182
+PLUMED: 1 Prepare dependencies                        100001     0.007623     0.000000     0.000000     0.000010
+PLUMED: 2 Sharing data                                100001     0.007735     0.000000     0.000000     0.000009
+PLUMED: 3 Waiting for data                            100001     0.003475     0.000000     0.000000     0.000005
+PLUMED: 4 Calculating (forward loop)                  100001     0.384384     0.000004     0.000001     0.178817
+PLUMED: 4A 2 p                                           101     0.000157     0.000002     0.000001     0.000004
+PLUMED: 4A 3 cuda                                        101     0.262503     0.002599     0.000557     0.148919
+PLUMED: 4A 4 cpu                                         101     0.063591     0.000630     0.000213     0.029887
+PLUMED: 4A 5 @5                                          101     0.000036     0.000000     0.000000     0.000001
+PLUMED: 4A 6 @6                                          101     0.000025     0.000000     0.000000     0.000001
+PLUMED: 4A 7 @7                                       100001     0.010037     0.000000     0.000000     0.000005
+PLUMED: 5 Applying (backward loop)                    100001     0.055924     0.000001     0.000001     0.000017
+PLUMED: 5A 0 @7                                       100001     0.004934     0.000000     0.000000     0.000011
+PLUMED: 5A 1 @6                                          101     0.000011     0.000000     0.000000     0.000000
+PLUMED: 5A 2 @5                                          101     0.000009     0.000000     0.000000     0.000000
+PLUMED: 5A 3 cpu                                         101     0.000373     0.000004     0.000003     0.000009
+PLUMED: 5A 4 cuda                                        101     0.000051     0.000001     0.000000     0.000001
+PLUMED: 5A 5 p                                           101     0.000082     0.000001     0.000001     0.000002
+PLUMED: 5B Update forces                              100001     0.004596     0.000000     0.000000     0.000011
+PLUMED: 6 Update                                      100001     0.005312     0.000000     0.000000     0.000047

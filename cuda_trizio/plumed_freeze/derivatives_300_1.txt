@@ -1,0 +1,11 @@
+
+Test with simple NN..
+Test with cpu..
+tensor([0.0302], grad_fn=<SqueezeBackward3>)
+(tensor([-0.0309,  0.0167]),)
+
+Test with cuda..
+tensor([0.0302], device='cuda:0', grad_fn=<SqueezeBackward3>)
+(tensor([-0.0309,  0.0167], device='cuda:0'),)
+
+Model exported as cuda_cv_300_1.pt

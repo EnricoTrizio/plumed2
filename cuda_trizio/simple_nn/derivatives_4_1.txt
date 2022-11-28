@@ -1,0 +1,20 @@
+Test with simple square model..
+Input: tensor([1., 2., 3., 4., 5.]) torch.Size([5])
+Output: tensor([ 1.,  4.,  9., 16., 25.], grad_fn=<PowBackward0>) torch.Size([5])
+Derivatives. 
+(tensor([2., 0., 0., 0., 0.]),)
+(tensor([0., 4., 0., 0., 0.]),)
+(tensor([0., 0., 6., 0., 0.]),)
+(tensor([0., 0., 0., 8., 0.]),)
+(tensor([ 0.,  0.,  0.,  0., 10.]),)
+
+Test with simple NN..
+Test with cpu..
+tensor([2.5885], grad_fn=<SqueezeBackward3>)
+(tensor([ 0.3823,  0.4150, -0.1171,  0.4593]),)
+
+Test with cuda..
+tensor([2.5885], device='cuda:0', grad_fn=<SqueezeBackward3>)
+(tensor([ 0.3823,  0.4150, -0.1171,  0.4593], device='cuda:0'),)
+
+Model exported as cuda_cv_4_1.pt

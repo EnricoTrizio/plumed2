@@ -1,0 +1,312 @@
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.9.0-dev (git: b59033373-dirty) compiled on Nov  8 2022 at 17:07:25
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /home/etrizio@iit.local/Bin/dev/plumed2/
+PLUMED: For installed feature, see /home/etrizio@iit.local/Bin/dev/plumed2//src/config/config.txt
+PLUMED: Molecular dynamics engine: mdrunner_linearexpansion
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 1
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 1
+PLUMED: File suffix: 
+PLUMED: FILE: plumed.dat
+PLUMED: Action LOAD
+PLUMED:   with label @0
+PLUMED: Executing: env PLUMED_ROOT="/home/etrizio@iit.local/Bin/dev/plumed2/" env PLUMED_VERSION="2.9.0-dev" env PLUMED_HTMLDIR="/home/etrizio@iit.local/Bin/dev/plumed2/" env PLUMED_INCLUDEDIR="/home/etrizio@iit.local/Bin/dev/plumed2//src/include" env PLUMED_PROGRAM_NAME="plumed" env PLUMED_IS_INSTALLED="no" "/home/etrizio@iit.local/Bin/dev/plumed2/"/scripts/mklib.sh ./test.cpp (only on master node)
+PLUMED: Loading shared library ././test.so
+PLUMED: Here is the new list of available actions
+PLUMED:   ABMD
+PLUMED:   ADAPTIVE_PATH
+PLUMED:   ALPHABETA
+PLUMED:   ALPHARMSD
+PLUMED:   ANGLE
+PLUMED:   ANGLES
+PLUMED:   ANTIBETARMSD
+PLUMED:   AROUND
+PLUMED:   AVERAGE
+PLUMED:   BF_CHEBYSHEV
+PLUMED:   BF_COMBINED
+PLUMED:   BF_COSINE
+PLUMED:   BF_CUBIC_B_SPLINES
+PLUMED:   BF_CUSTOM
+PLUMED:   BF_FOURIER
+PLUMED:   BF_GAUSSIANS
+PLUMED:   BF_LEGENDRE
+PLUMED:   BF_POWERS
+PLUMED:   BF_SINE
+PLUMED:   BF_WAVELETS
+PLUMED:   BIASVALUE
+PLUMED:   BRIDGE
+PLUMED:   CALIBER
+PLUMED:   CAVITY
+PLUMED:   CELL
+PLUMED:   CENTER
+PLUMED:   CENTER_OF_MULTICOLVAR
+PLUMED:   COLLECT_FRAMES
+PLUMED:   COM
+PLUMED:   COMBINE
+PLUMED:   COMMITTOR
+PLUMED:   CONSTANT
+PLUMED:   CONTACTMAP
+PLUMED:   CONVERT_TO_FES
+PLUMED:   COORDINATION
+PLUMED:   COORDINATIONNUMBER
+PLUMED:   CS2BACKBONE
+PLUMED:   CUSTOM
+PLUMED:   DEBUG
+PLUMED:   DENSITY
+PLUMED:   DHENERGY
+PLUMED:   DIHCOR
+PLUMED:   DIMER
+PLUMED:   DIPOLE
+PLUMED:   DISTANCE
+PLUMED:   DISTANCES
+PLUMED:   DISTANCE_FROM_CONTOUR
+PLUMED:   DRMSD
+PLUMED:   DUMPATOMS
+PLUMED:   DUMPCUBE
+PLUMED:   DUMPDERIVATIVES
+PLUMED:   DUMPFORCES
+PLUMED:   DUMPGRID
+PLUMED:   DUMPMASSCHARGE
+PLUMED:   DUMPMULTICOLVAR
+PLUMED:   DUMPPROJECTIONS
+PLUMED:   ECV_CUSTOM
+PLUMED:   ECV_LINEAR
+PLUMED:   ECV_MULTITHERMAL
+PLUMED:   ECV_MULTITHERMAL_MULTIBARIC
+PLUMED:   ECV_UMBRELLAS_FILE
+PLUMED:   ECV_UMBRELLAS_LINE
+PLUMED:   EEFSOLV
+PLUMED:   EFFECTIVE_ENERGY_DRIFT
+PLUMED:   EMMI
+PLUMED:   ENDPLUMED
+PLUMED:   ENERGY
+PLUMED:   ENSEMBLE
+PLUMED:   ERMSD
+PLUMED:   EUCLIDEAN_DISSIMILARITIES
+PLUMED:   EXTENDED_LAGRANGIAN
+PLUMED:   EXTERNAL
+PLUMED:   EXTRACV
+PLUMED:   FAKE
+PLUMED:   FIND_CONTOUR
+PLUMED:   FIND_CONTOUR_SURFACE
+PLUMED:   FIND_SPHERICAL_CONTOUR
+PLUMED:   FIT_TO_TEMPLATE
+PLUMED:   FIXEDATOM
+PLUMED:   FLUSH
+PLUMED:   FOURIER_TRANSFORM
+PLUMED:   FRET
+PLUMED:   FUNCPATHGENERAL
+PLUMED:   FUNCPATHMSD
+PLUMED:   FUNCSUMHILLS
+PLUMED:   GHBFIX
+PLUMED:   GHOST
+PLUMED:   GPROPERTYMAP
+PLUMED:   GRID_TO_XYZ
+PLUMED:   GROUP
+PLUMED:   GYRATION
+PLUMED:   HISTOGRAM
+PLUMED:   INCLUDE
+PLUMED:   INCYLINDER
+PLUMED:   INENVELOPE
+PLUMED:   INPLANEDISTANCES
+PLUMED:   INSPHERE
+PLUMED:   INTEGRATE_GRID
+PLUMED:   INTERPOLATE_GRID
+PLUMED:   JCOUPLING
+PLUMED:   LANDMARK_SELECT_FPS
+PLUMED:   LANDMARK_SELECT_RANDOM
+PLUMED:   LANDMARK_SELECT_STAGED
+PLUMED:   LANDMARK_SELECT_STRIDE
+PLUMED:   LOAD
+PLUMED:   LOCALENSEMBLE
+PLUMED:   LOCAL_AVERAGE
+PLUMED:   LOWER_WALLS
+PLUMED:   MATHEVAL
+PLUMED:   MAXENT
+PLUMED:   MCOLV_COMBINE
+PLUMED:   MCOLV_PRODUCT
+PLUMED:   METAD
+PLUMED:   METAINFERENCE
+PLUMED:   MFILTER_BETWEEN
+PLUMED:   MFILTER_LESS
+PLUMED:   MFILTER_MORE
+PLUMED:   MOLINFO
+PLUMED:   MOVINGRESTRAINT
+PLUMED:   MTRANSFORM_BETWEEN
+PLUMED:   MTRANSFORM_LESS
+PLUMED:   MTRANSFORM_MORE
+PLUMED:   MULTICOLVARDENS
+PLUMED:   MULTI_RMSD
+PLUMED:   NLINKS
+PLUMED:   NOE
+PLUMED:   OPES_EXPANDED
+PLUMED:   OPES_METAD
+PLUMED:   OPES_METAD_EXPLORE
+PLUMED:   OPT_ADAM
+PLUMED:   OPT_AVERAGED_SGD
+PLUMED:   OPT_DUMMY
+PLUMED:   OPT_ROBBINS_MONRO_SGD
+PLUMED:   OUTPUT_ANALYSIS_DATA_TO_COLVAR
+PLUMED:   OUTPUT_ANALYSIS_DATA_TO_PDB
+PLUMED:   PARABETARMSD
+PLUMED:   PATH
+PLUMED:   PATHMSD
+PLUMED:   PBMETAD
+PLUMED:   PCARMSD
+PLUMED:   PCAVARS
+PLUMED:   PCS
+PLUMED:   PIECEWISE
+PLUMED:   PLUMED
+PLUMED:   POSITION
+PLUMED:   PRE
+PLUMED:   PRINT
+PLUMED:   PRINT_DISSIMILARITY_MATRIX
+PLUMED:   PROJECTION_ON_AXIS
+PLUMED:   PROPERTYMAP
+PLUMED:   PUCKERING
+PLUMED:   PYTORCH_MODEL
+PLUMED:   PYTORCH_MODEL_CUDA
+PLUMED:   PYTORCH_MODEL_CUDA2
+PLUMED:   RANDOM_EXCHANGES
+PLUMED:   RDC
+PLUMED:   READ
+PLUMED:   READ_DISSIMILARITY_MATRIX
+PLUMED:   RESCALE
+PLUMED:   RESELECT_LANDMARKS
+PLUMED:   RESET_CELL
+PLUMED:   RESTART
+PLUMED:   RESTRAINT
+PLUMED:   REWEIGHT_BIAS
+PLUMED:   REWEIGHT_METAD
+PLUMED:   REWEIGHT_TEMP_PRESS
+PLUMED:   REWEIGHT_WHAM
+PLUMED:   RMSD
+PLUMED:   SAXS
+PLUMED:   SELECT
+PLUMED:   SELECTOR
+PLUMED:   SORT
+PLUMED:   STATS
+PLUMED:   TARGET
+PLUMED:   TD_CHI
+PLUMED:   TD_CHISQUARED
+PLUMED:   TD_CUSTOM
+PLUMED:   TD_EXPONENTIAL
+PLUMED:   TD_EXPONENTIALLY_MODIFIED_GAUSSIAN
+PLUMED:   TD_GAUSSIAN
+PLUMED:   TD_GENERALIZED_EXTREME_VALUE
+PLUMED:   TD_GENERALIZED_NORMAL
+PLUMED:   TD_GRID
+PLUMED:   TD_LINEAR_COMBINATION
+PLUMED:   TD_MULTICANONICAL
+PLUMED:   TD_MULTITHERMAL_MULTIBARIC
+PLUMED:   TD_PRODUCT_COMBINATION
+PLUMED:   TD_PRODUCT_DISTRIBUTION
+PLUMED:   TD_UNIFORM
+PLUMED:   TD_VONMISES
+PLUMED:   TD_WELLTEMPERED
+PLUMED:   TEMPLATE
+PLUMED:   TETRAHEDRALPORE
+PLUMED:   TIME
+PLUMED:   TORSION
+PLUMED:   TORSIONS
+PLUMED:   UNITS
+PLUMED:   UPDATE_IF
+PLUMED:   UPPER_WALLS
+PLUMED:   VES_DELTA_F
+PLUMED:   VES_LINEAR_EXPANSION
+PLUMED:   VES_OUTPUT_BASISFUNCTIONS
+PLUMED:   VES_OUTPUT_FES
+PLUMED:   VES_OUTPUT_TARGET_DISTRIBUTION
+PLUMED:   VOLUME
+PLUMED:   WHAM_HISTOGRAM
+PLUMED:   WHAM_WEIGHTS
+PLUMED:   WHOLEMOLECULES
+PLUMED:   WRAPAROUND
+PLUMED:   XANGLES
+PLUMED:   XDISTANCES
+PLUMED:   XYDISTANCES
+PLUMED:   XYTORSIONS
+PLUMED:   XZDISTANCES
+PLUMED:   XZTORSIONS
+PLUMED:   YANGLES
+PLUMED:   YDISTANCES
+PLUMED:   YXTORSIONS
+PLUMED:   YZDISTANCES
+PLUMED:   YZTORSIONS
+PLUMED:   ZANGLES
+PLUMED:   ZDISTANCES
+PLUMED:   ZXTORSIONS
+PLUMED:   ZYTORSIONS
+PLUMED: Action UNITS
+PLUMED:   with label @1
+PLUMED:   length: nm
+PLUMED:   energy: kj/mol
+PLUMED:   time: ps
+PLUMED:   charge: e
+PLUMED:   mass: amu
+PLUMED:   using natural units
+PLUMED:   inside PLUMED, Boltzmann constant is 1
+PLUMED: Action POSITION
+PLUMED:   with label p
+PLUMED:   for atom 1
+PLUMED:   using periodic boundary conditions
+PLUMED:   added component to this action:  p.x 
+PLUMED:   added component to this action:  p.y 
+PLUMED:   added component to this action:  p.z 
+PLUMED:   WARNING: components will not have the proper periodicity - see manual
+PLUMED: Action PYTORCH_MODEL
+PLUMED:   with label cpu
+PLUMED:   with arguments p.x p.y
+PLUMED: Checking output dimension:
+PLUMED: 
+PLUMED: 
+PLUMED: ################################################################################
+PLUMED: 
+PLUMED: The following operation failed in the TorchScript interpreter.
+PLUMED: Traceback of TorchScript, serialized code (most recent call last):
+PLUMED:   File "code/__torch__/mlcvs/models/nn.py", line 19, in forward
+PLUMED:     _0 = self.w
+PLUMED:     _1 = self.b
+PLUMED:     _2 = torch.sub((self.nn).forward(input, ), _1, alpha=1)
+PLUMED:                     ~~~~~~~~~~~~~~~~ <--- HERE
+PLUMED:     return torch.matmul(_2, _0)
+PLUMED:   File "code/__torch__/torch/nn/modules/container.py", line 19, in forward
+PLUMED:     _2 = getattr(self, "2")
+PLUMED:     _3 = getattr(self, "1")
+PLUMED:     _4 = (getattr(self, "0")).forward(input, )
+PLUMED:           ~~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+PLUMED:     _5 = (_3).forward1((_2).forward((_3).forward(_4, ), ), )
+PLUMED:     _6 = (_0).forward((_3).forward2((_1).forward(_5, ), ), )
+PLUMED:   File "code/__torch__/torch/nn/modules/linear.py", line 11, in forward
+PLUMED:     input: Tensor) -> Tensor:
+PLUMED:     _0 = self.bias
+PLUMED:     _1 = torch.matmul(input, torch.t(self.weight))
+PLUMED:          ~~~~~~~~~~~~ <--- HERE
+PLUMED:     return torch.add_(_1, _0, alpha=1)
+PLUMED: 
+PLUMED: Traceback of TorchScript, original code (most recent call last):
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/functional.py(1753): linear
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/modules/linear.py(94): forward
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/modules/module.py(860): _slow_forward
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/modules/module.py(887): _call_impl
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/modules/container.py(119): forward
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/modules/module.py(860): _slow_forward
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/modules/module.py(887): _call_impl
+PLUMED: /home/etrizio@iit.local/Bin/mlcvs/mlcvs/models/nn.py(171): forward_nn
+PLUMED: /home/etrizio@iit.local/Bin/mlcvs/mlcvs/models/nn.py(193): forward
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/modules/module.py(860): _slow_forward
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/nn/modules/module.py(887): _call_impl
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/jit/_trace.py(934): trace_module
+PLUMED: /home/etrizio@iit.local/Bin/miniconda3/envs/torch_LTS/lib/python3.8/site-packages/torch/jit/_trace.py(733): trace
+PLUMED: YORCHHHH.py(48): <module>
+PLUMED: RuntimeError: Tensor for 'out' is on CPU, Tensor for argument #1 'self' is on CPU, but expected them to be on GPU (while checking arguments for addmm)
+PLUMED: 
+PLUMED: 
+PLUMED: ################################################################################
+PLUMED: 
+PLUMED:                                               Cycles        Total      Average      Minimum      Maximum
+PLUMED:                                                    1    11.053099    11.053099    11.053099    11.053099
