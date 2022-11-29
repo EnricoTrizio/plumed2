@@ -1,1 +1,0 @@
-/usr/bin/c++ -I${LIBTORCH}/include/torch/csrc/api/include/ -I${LIBTORCH}/include/ -I${LIBTORCH}/include/torch -Wl,--no-as-needed test.cpp  -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda; ./a.out
